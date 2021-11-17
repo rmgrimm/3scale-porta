@@ -22,7 +22,7 @@ class Rails::TestUnit::Runner
       # This is a private method, expect this to be broken in the future
       def extract_filters(argv)
         multitests = argv.flat_map { |patterns| patterns.strip.split(/\s+/) }.compact
-        puts "TEST='"
+        puts "TESTS='"
         multitests.each do |file|
           print "\t", file, "\n"
         end
